@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd my-bingo-client && npm start",
-    "server": "cd my-bingo-server && npm start",
+    "client": "cd bingo-client && npm start",
+    "server": "cd bingo-server && npm start",
     "start": "concurrently - kill-others \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
