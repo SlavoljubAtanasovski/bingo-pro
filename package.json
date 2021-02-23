@@ -1,0 +1,20 @@
+{
+  "name": "my-bingo-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd my-bingo-client && npm start",
+    "server": "cd my-bingo-server && npm start",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "5.0.0"
+  }
+}
